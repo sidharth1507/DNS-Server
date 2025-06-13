@@ -55,26 +55,6 @@ python test_dns_server.py example.com
 python test_dns_server.py example.com 2054
 ```
 
-### Using dig (Linux/macOS)
-
-```bash
-# Test the basic DNS server
-dig @localhost -p 2053 example.com
-
-# Test the forwarding DNS server
-dig @localhost -p 2054 example.com
-```
-
-### Using nslookup (Windows)
-
-```bash
-# Test the basic DNS server
-nslookup example.com localhost:2053
-
-# Test the forwarding DNS server
-nslookup example.com localhost:2054
-```
-
 ## Implementation Details
 
 ### DNS Message Format
